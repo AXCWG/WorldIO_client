@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/WorldIO_client/static/css/main.2212dd46.css",
+    "main.js": "/WorldIO_client/static/js/main.c3af1cf2.js",
+    "static/js/453.41cb200d.chunk.js": "/WorldIO_client/static/js/453.41cb200d.chunk.js",
+    "index.html": "/WorldIO_client/index.html",
+    "main.2212dd46.css.map": "/WorldIO_client/static/css/main.2212dd46.css.map",
+    "main.c3af1cf2.js.map": "/WorldIO_client/static/js/main.c3af1cf2.js.map",
+    "453.41cb200d.chunk.js.map": "/WorldIO_client/static/js/453.41cb200d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2212dd46.css",
+    "static/js/main.c3af1cf2.js"
+  ]
+}
