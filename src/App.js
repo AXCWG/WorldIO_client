@@ -16,7 +16,7 @@ function App() {
         document.getElementById("output").scrollTop = document.getElementById("output").scrollHeight + 40;
     }
 
-    const [msgBuffer, setMsgBuffer] = useState("Welcome to WorldIO!\n");
+    const [msgBuffer, setMsgBuffer] = useState("Welcome to World IO v1.0.0!\n欢迎来到 世界IO 1.0.0\n历史记录：\n");
     const [msg, setMsg] = useState("");
     const [cookies, setCookie, removeCookie] = useCookies(['username']);
     const [username, setUsername] = useState(cookies["username"] === undefined ? "Anonymous":  cookies["username"]);
