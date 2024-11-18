@@ -5,6 +5,7 @@ import {useCookies} from "react-cookie";
 var ws = new WebSocket("wss://andyxie.cn:8181");
 
 function send(username, msg) {
+    msg = msg.replaceAll("\\n", "\n")
     ws.send(JSON.stringify({username: username, msg: msg}));
 
 }
@@ -18,7 +19,7 @@ function App() {
     const [msgBuffer, setMsgBuffer] = useState("Welcome to WorldIO!\n");
     const [msg, setMsg] = useState("");
     const [cookies, setCookie, removeCookie] = useCookies(['username']);
-    const [username, setUsername] = useState(cookies["username"] === "" ? "Anonymous":  cookies["username"]);
+    const [username, setUsername] = useState(cookies["username"] === undefined ? "Anonymous":  cookies["username"]);
 
     return (
         <div className="App" style={{width: "100%", display: 'flex', flexDirection: 'column', height: '100%'}}>
