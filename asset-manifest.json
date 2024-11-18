@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/worldio_client/static/css/main.2212dd46.css",
-    "main.js": "/worldio_client/static/js/main.42754c20.js",
+    "main.js": "/worldio_client/static/js/main.eb289d68.js",
     "static/js/453.41cb200d.chunk.js": "/worldio_client/static/js/453.41cb200d.chunk.js",
     "index.html": "/worldio_client/index.html",
     "main.2212dd46.css.map": "/worldio_client/static/css/main.2212dd46.css.map",
-    "main.42754c20.js.map": "/worldio_client/static/js/main.42754c20.js.map",
+    "main.eb289d68.js.map": "/worldio_client/static/js/main.eb289d68.js.map",
     "453.41cb200d.chunk.js.map": "/worldio_client/static/js/453.41cb200d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2212dd46.css",
-    "static/js/main.42754c20.js"
+    "static/js/main.eb289d68.js"
   ]
 }
