@@ -16,7 +16,12 @@ function App() {
         document.getElementById("output").scrollTop = document.getElementById("output").scrollHeight + 40;
     }
 
-    const [msgBuffer, setMsgBuffer] = useState("Welcome to World IO v1.0.0!\n欢迎来到 世界IO 1.0.0\n历史记录：\n");
+    const [msgBuffer, setMsgBuffer] = useState(
+        "Welcome to World IO v1.0.0!\n" +
+        "欢迎来到 世界IO 1.0.0\n" +
+        "使用\\n以换行 | Use \\n to return. " +
+        "不消考虑任何规则：发就完事了 ｜ No need to consider boundaries: just SEND IT!!!!!"+
+        "历史记录：|History: \n");
     const [msg, setMsg] = useState("");
     const [cookies, setCookie, removeCookie] = useCookies(['username']);
     const [username, setUsername] = useState(cookies["username"] === undefined ? "Anonymous":  cookies["username"]);
