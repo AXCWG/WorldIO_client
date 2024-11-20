@@ -13,7 +13,10 @@ function send(username, msg) {
 function App() {
     ws.onmessage = (e) => {
         setMsgBuffer(msgBuffer + e.data + "\n")
-        document.getElementById("output").scrollTop = document.getElementById("output").scrollHeight + 40;
+        for(var i = 0; i < 10; i++) {
+            document.getElementById("output").scrollTop = document.getElementById("output").scrollHeight + 40;
+
+        }
     }
 
     const [msgBuffer, setMsgBuffer] = useState(
@@ -29,7 +32,7 @@ function App() {
     return (
         <div className="App" style={{width: "100%", display: 'flex', flexDirection: 'column', height: '100%'}}>
             <div style={{flex: 2, width: '99.8%'}}>
-                <textarea id={"output"} style={{width: "100%", height: "100%", resize: "none",}}
+                <textarea id={"output"} style={{width: "100%", height: "100%", resize: "none",textWrap: "nowrap"}}
                           disabled={true} value={msgBuffer}></textarea>
             </div>
             <div style={{display: "flex", flexDirection: "row", height: "30px", width: "100%"}}>
